@@ -1,0 +1,3 @@
+
+# ignoring all files in node_modules for pusing in github
+*node_modules* 
