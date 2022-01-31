@@ -10,6 +10,7 @@ module.exports = {
         gStart: '#02047E',
         gEnd: '#002ABF',
         title: '#15214A',
+        bodyBg: '#F5FBFF',
       },
       container: {
         center: true,
