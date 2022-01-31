@@ -31,7 +31,7 @@
   }
 
   .prev-price {
-    @apply after:content-[""] after:bg-title/50 after:w-[26px] after:h-px after:absolute after:top-50p after:left-0;
+    @apply after:content-[""] after:bg-title/50 after:w-[32px] after:h-px after:absolute after:top-50p after:left-0;
   }
 
   .curr-price {
@@ -51,6 +51,10 @@
     background-position: 86% 50%;
   }
 
+  .feature-section {
+    clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
+  }
+
   @media (max-width: 360px) {
     .header {
       background-position: -410px 290px, center;
@@ -60,6 +64,9 @@
     .header {
       background-size: 1500px, 100%;
       background-position: -690px 100px, center;
+    }
+    .feature-section {
+      clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
     }
   }
 
