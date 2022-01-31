@@ -4,10 +4,10 @@
 
 @layer components {
   .header {
-    /* background: url('../../images/banner-bg.png') right top no-repeat,
-      url('../../images/header-bg.png') center no-repeat;
-    background-size: contain, cover; */
-    @apply bg-gradient-to-r from-gStart to-gEnd;
+    background: url('../../images/banner-bg.png') no-repeat,
+      linear-gradient(to right, #02047e, #002abf);
+    background-size: 230%, 100%;
+    background-position: -450px 224px, center;
     clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
   }
   .mobile-menu.show {
@@ -19,7 +19,7 @@
   }
 
   .custom-btn-large {
-    @apply text-base px-7 py-3;
+    @apply text-base px-5 md:px-7 py-3;
   }
 
   .custom-btn-primary {
@@ -35,9 +35,41 @@
     background-position: 86% 50%;
   }
 
+  @media (max-width: 360px) {
+    .header {
+      background-position: -410px 290px, center;
+    }
+  }
+  @media (min-width: 768px) {
+    .header {
+      background-size: 1500px, 100%;
+      background-position: -690px 100px, center;
+    }
+  }
+
   @media (min-width: 1024px) {
     .header {
-      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
+      background-size: 1400px, 100%;
+      background-position: -220px -100px, center;
+      clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    }
+  }
+  @media (min-width: 1280px) {
+    .header {
+      background-size: 1578px, 100%;
+      background-position: -150px -120px, center;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .header {
+      background-position: -110px -120px, center;
+    }
+  }
+  @media (min-width: 1600px) {
+    .header {
+      background-size: 1820px, 100%;
+      background-position: -150px -120px, center;
     }
   }
 }
