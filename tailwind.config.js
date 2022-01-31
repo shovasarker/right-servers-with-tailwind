@@ -9,6 +9,7 @@ module.exports = {
         footerBg: '#100C42',
         gStart: '#02047E',
         gEnd: '#002ABF',
+        title: '#15214A',
       },
       container: {
         center: true,
@@ -18,6 +19,8 @@ module.exports = {
       },
       spacing: {
         '0p': '0%',
+        '2p': '2%',
+        '5p': '5%',
         '10p': '10%',
         '20p': '20%',
         '25p': '25%',
