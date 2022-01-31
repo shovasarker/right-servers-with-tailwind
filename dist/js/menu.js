@@ -13,6 +13,12 @@ const fullyManagedArrow = document.querySelector('#fully-managed-arrow')
 //Mobile Menu btn's Click event listener
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('!top-100p')
+  if (!ourSolutionDropdown.classList.contains('hidden')) {
+    ourSolutionDropdown.classList.add('hidden')
+  }
+  if (!fullyManagedDropdown.classList.contains('hidden')) {
+    fullyManagedDropdown.classList.add('hidden')
+  }
 })
 
 // Dropdown menu click event listener

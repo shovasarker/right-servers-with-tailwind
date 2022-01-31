@@ -3,7 +3,41 @@
 @tailwind utilities;
 
 @layer components {
+  .header {
+    /* background: url('../../images/banner-bg.png') right top no-repeat,
+      url('../../images/header-bg.png') center no-repeat;
+    background-size: contain, cover; */
+    @apply bg-gradient-to-r from-gStart to-gEnd;
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
+  }
   .mobile-menu.show {
     @apply !top-100p;
+  }
+
+  .custom-btn {
+    @apply px-6 py-2.5 rounded-sm border text-tiny text-white font-semibold inline-block;
+  }
+
+  .custom-btn-large {
+    @apply text-base px-7 py-3;
+  }
+
+  .custom-btn-primary {
+    @apply bg-paste hover:bg-transparent hover:text-paste transition-colors border-paste;
+  }
+
+  .custom-btn-outline {
+    @apply bg-transparent border-white hover:bg-white hover:text-paste transition-colors;
+  }
+
+  .banner-wrapper {
+    background-size: 240%;
+    background-position: 86% 50%;
+  }
+
+  @media (min-width: 1024px) {
+    .header {
+      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
+    }
   }
 }
