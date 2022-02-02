@@ -620,9 +620,167 @@ Ensure the default browser behavior of the `hidden` attribute.
           clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
 }
 
+thead tr {
+  background-color: rgb(42 92 240 / 0.1);
+}
+
+thead td {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(21 33 74 / var(--tw-text-opacity));
+}
+
+tbody td {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(21 33 74 / 0.8);
+}
+
+tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(42 92 240 / 0.2);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+tbody tr:last-child {
+  border-bottom-width: 0px;
+}
+
 @media (max-width: 360px) {
   .header {
     background-position: -410px 290px, center;
+  }
+}
+
+/* !Media query for table only */
+
+@media (max-width: 767px) {
+  thead, tbody, tr, td {
+    display: block;
+  }
+
+  thead {
+    position: absolute;
+  }
+
+  thead {
+    top: -310%;
+  }
+
+  /* tbody td {
+      @apply relative text-right before:absolute before:left-5p before:text-sm before:font-semibold before:text-title;
+    } */
+
+  tbody td {
+    display: flex;
+  }
+
+  tbody td {
+    justify-content: space-between;
+  }
+
+  tbody td {
+    border-bottom-width: 1px;
+  }
+
+  tbody td {
+    border-bottom-color: rgb(42 92 240 / 0.2);
+  }
+
+  tbody td {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  tbody td::before {
+    content: var(--tw-content);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  tbody td::before {
+    content: var(--tw-content);
+    font-weight: 600;
+  }
+
+  tbody td::before {
+    content: var(--tw-content);
+    --tw-text-opacity: 1;
+    color: rgb(21 33 74 / var(--tw-text-opacity));
+  }
+
+  tbody tr {
+    margin-bottom: 0.5rem;
+  }
+
+  tbody tr {
+    border-bottom-width: 0px;
+  }
+
+  tbody tr {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  tbody tr:last-child {
+    margin-bottom: 0px;
+  }
+
+  tbody td:nth-child(1)::before {
+    --tw-content: "Package";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(2)::before {
+    --tw-content: "Location";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(3)::before {
+    --tw-content: "Processor";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(4)::before {
+    --tw-content: "Core";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(5)::before {
+    --tw-content: "RAM";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(6)::before {
+    --tw-content: "Storage";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(7)::before {
+    --tw-content: "Bandwidth";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(8)::before {
+    --tw-content: "Price";
+    content: var(--tw-content);
+  }
+
+  tbody td:nth-child(9) {
+    border-bottom-width: 0px;
   }
 }
 
@@ -723,6 +881,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -767,6 +930,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mb-64 {
+  margin-bottom: 16rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -777,6 +948,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -797,6 +972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4\/6 {
   width: 66.666667%;
+}
+
+.table-auto {
+  table-layout: auto;
 }
 
 .-translate-x-50p {
@@ -830,12 +1009,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column-reverse;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -856,6 +1043,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
@@ -898,6 +1089,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-btnBlue {
   --tw-border-opacity: 1;
   border-color: rgb(42 92 240 / var(--tw-border-opacity));
@@ -926,8 +1121,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(68 215 149 / 0.2);
 }
 
+.bg-btnBlue\/10 {
+  background-color: rgb(42 92 240 / 0.1);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .from-gStart {
@@ -949,6 +1152,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-9 {
   padding: 2.25rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-8 {
@@ -996,6 +1203,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 10rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .pb-64 {
   padding-bottom: 16rem;
 }
@@ -1006,6 +1228,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .text-left {
@@ -1062,6 +1288,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 400;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -1102,6 +1332,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(21 33 74 / 0.7);
 }
 
+.text-title\/50 {
+  color: rgb(21 33 74 / 0.5);
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1120,6 +1354,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1183,6 +1423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
@@ -1198,10 +1443,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
   }
 
   .md\:gap-x-8 {

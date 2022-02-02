@@ -244,7 +244,7 @@
             <!-- server section end -->
 
             <!-- features section start -->
-            <section class="feature-section bg-gradient-to-r from-gStart to-gEnd py-40">
+            <section class="feature-section bg-gradient-to-r from-gStart to-gEnd py-40 mb-10">
                 <div class="container px-8 lg:px-16 xl:px-32 text-center">
                     <h1 class="text-4xl font-bold text-white mb-5">Key Product Features</h1>
                     <p class="text-base text-white font-normal leading-loose mb-16">
@@ -330,6 +330,210 @@
 
             </section>
             <!-- features section end -->
+
+            <!-- configuration section start -->
+            <section class="container px-8 lg:px-16 xl:px-32 mb-64">
+                <h1 class="text-4xl font-bold text-title mb-5 text-center">Configuration For You</h1>
+                <p class="text-base text-title font-normal leading-loose text-center mb-16">
+                    Our High Performance Bare Metal server offer you high<br>reliability and stability
+                </p>
+                <!-- sort selection section start -->
+                <div class="flex justify-center lg:justify-start items-center flex-wrap gap-y-5 bg-white px-5 mb-5">
+                    <select name="location" id="location"
+                        class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Location</option>
+                        <option value="USA">USA</option>
+                        <option value="EU">EU</option>
+                        <option value="SEA">SEA</option>
+                        <option value="SA">SA</option>
+                    </select>
+                    <select name="processor" id="processor"
+                        class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Processor</option>
+                        <option value="intel Xeon">intel Xeon</option>
+                        <option value="intel">intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+                    <select name="core" id="core" class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Core</option>
+                        <option value="16 core">16 core</option>
+                        <option value="8 core">8 core</option>
+                        <option value="4 core">4 core</option>
+                        <option value="2 core">2 core</option>
+                    </select>
+                    <select name="ram" id="ram" class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>RAM</option>
+                        <option value="128 GB">128 GB</option>
+                        <option value="64 GB">64 GB</option>
+                        <option value="32 GB">32 GB</option>
+                        <option value="16 GB">16 GB</option>
+                    </select>
+                    <select name="storage" id="storage" class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Storage</option>
+                        <option value="1 x 1TB SSD">1 x 1TB SSD</option>
+                        <option value="1 x 500 GB SSD">1 x 500 GB SSD</option>
+                        <option value="2 x 250 GB SSD">2 x 250 GB SSD</option>
+                        <option value="2 x 120 Gb SSD">2 x 120 Gb SSD</option>
+                    </select>
+                    <select name="bandwidth" id="bandwidth"
+                        class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Bandwidth</option>
+                        <option value="10 TB">10 TB</option>
+                        <option value="5 TB">5 TB</option>
+                        <option value="2 TB">2 TB</option>
+                        <option value="1 TB">1 TB</option>
+                    </select>
+                    <select name="price" id="price" class="inline-block pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled selected>Price</option>
+                        <option value="$180/m">$180/m</option>
+                        <option value="$180/m">$180/m</option>
+                        <option value="$180/m">$180/m</option>
+                        <option value="$180/m">$180/m</option>
+                    </select>
+                </div>
+                <!-- sort selection section end -->
+                <!-- sort selction display section start -->
+                <div class="flex justify-start items-center flex-wrap gap-4">
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
+                        Location - <span id="location-span" class="text-btnBlue font-bold">USA</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Processor - <span id="processor-span" class="text-btnBlue font-bold">intel XEON</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
+                        Core - <span id="core-span" class="text-btnBlue font-bold">8 core</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        RAM - <span id="ram-span" class="text-btnBlue font-bold">64 GB</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Storage - <span id="storage-span" class="text-btnBlue font-bold">2 x 250 GB SSD</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Bandwidth - <span id="bandwidth-span" class="text-btnBlue font-bold">10 TB</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Price - <span id="price-span" class="text-btnBlue font-bold">$180/m</span>
+                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                </div>
+                <!-- sort selction display section end -->
+                <!-- Data table for configuration section start -->
+                <table class="table-auto my-8 shadow-md w-full">
+                    <thead>
+                        <tr>
+                            <td>Package</td>
+                            <td>Location</td>
+                            <td>Processors</td>
+                            <td>Core</td>
+                            <td>RAM</td>
+                            <td>Storage</td>
+                            <td>Bandwidth</td>
+                            <td>Price</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                            <td>BR 01</td>
+                            <td>California</td>
+                            <td>Intel XEON</td>
+                            <td>8 core</td>
+                            <td>64 GB</td>
+                            <td>2 x 250 GB SSD</td>
+                            <td>10 TB</td>
+                            <td>$180/m</td>
+                            <td>
+                                <button
+                                    class="bg-btnBlue text-white text-sm font-semibold px-3 py-2.5 rounded-sm border border-btnBlue hover:bg-white hover:text-btnBlue transition-colors">Configure</button>
+                            </td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td>BR 01</td>
+                            <td>California</td>
+                            <td>Intel XEON</td>
+                            <td>8 core</td>
+                            <td>64 GB</td>
+                            <td>2 x 250 GB SSD</td>
+                            <td>10 TB</td>
+                            <td>$180/m</td>
+                            <td>
+                                <button
+                                    class="bg-btnBlue text-white text-sm font-semibold px-3 py-2.5 rounded-sm border border-btnBlue hover:bg-white hover:text-btnBlue transition-colors">Configure</button>
+                            </td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <td>BR 01</td>
+                            <td>California</td>
+                            <td>Intel XEON</td>
+                            <td>8 core</td>
+                            <td>64 GB</td>
+                            <td>2 x 250 GB SSD</td>
+                            <td>10 TB</td>
+                            <td>$180/m</td>
+                            <td>
+                                <button
+                                    class="bg-btnBlue text-white text-sm font-semibold px-3 py-2.5 rounded-sm border border-btnBlue hover:bg-white hover:text-btnBlue transition-colors">Configure</button>
+                            </td>
+                        </tr>
+                        <!-- row 4 -->
+                        <tr>
+                            <td>BR 01</td>
+                            <td>California</td>
+                            <td>Intel XEON</td>
+                            <td>8 core</td>
+                            <td>64 GB</td>
+                            <td>2 x 250 GB SSD</td>
+                            <td>10 TB</td>
+                            <td>$180/m</td>
+                            <td>
+                                <button
+                                    class="bg-btnBlue text-white text-sm font-semibold px-3 py-2.5 rounded-sm border border-btnBlue hover:bg-white hover:text-btnBlue transition-colors">Configure</button>
+                            </td>
+                        </tr>
+                        <!-- row 5 -->
+                        <tr>
+                            <td>BR 01</td>
+                            <td>California</td>
+                            <td>Intel XEON</td>
+                            <td>8 core</td>
+                            <td>64 GB</td>
+                            <td>2 x 250 GB SSD</td>
+                            <td>10 TB</td>
+                            <td>$180/m</td>
+                            <td>
+                                <button
+                                    class="bg-btnBlue text-white text-sm font-semibold px-3 py-2.5 rounded-sm border border-btnBlue hover:bg-white hover:text-btnBlue transition-colors">Configure</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Data table for configuration section end -->
+            </section>
+            <!-- configuration section end -->
 
         </main>
         <!-- main section end -->

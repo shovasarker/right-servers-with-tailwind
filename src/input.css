@@ -54,12 +54,90 @@
   .feature-section {
     clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
   }
+  thead tr {
+    @apply bg-btnBlue/10;
+  }
+
+  thead td {
+    @apply py-3 text-title font-semibold text-sm text-center;
+  }
+
+  tbody td {
+    @apply text-center py-5 text-title/80 font-normal text-sm bg-white;
+  }
+
+  tbody tr {
+    @apply border-b border-b-btnBlue/20 bg-white;
+  }
+
+  tbody tr:last-child {
+    @apply border-b-0;
+  }
 
   @media (max-width: 360px) {
     .header {
       background-position: -410px 290px, center;
     }
   }
+
+  /* !Media query for table only */
+  @media (max-width: 767px) {
+    thead,
+    tbody,
+    tr,
+    td {
+      @apply block;
+    }
+
+    thead {
+      @apply absolute -top-310p;
+    }
+
+    /* tbody td {
+      @apply relative text-right before:absolute before:left-5p before:text-sm before:font-semibold before:text-title;
+    } */
+
+    tbody td {
+      @apply flex justify-between px-12 border-b border-b-btnBlue/20 before:text-sm before:font-semibold before:text-title;
+    }
+
+    tbody tr {
+      @apply mb-2 border-b-0 shadow-sm;
+    }
+
+    tbody tr:last-child {
+      @apply mb-0;
+    }
+
+    tbody td:nth-child(1) {
+      @apply before:content-["Package"];
+    }
+    tbody td:nth-child(2) {
+      @apply before:content-["Location"];
+    }
+    tbody td:nth-child(3) {
+      @apply before:content-["Processor"];
+    }
+    tbody td:nth-child(4) {
+      @apply before:content-["Core"];
+    }
+    tbody td:nth-child(5) {
+      @apply before:content-["RAM"];
+    }
+    tbody td:nth-child(6) {
+      @apply before:content-["Storage"];
+    }
+    tbody td:nth-child(7) {
+      @apply before:content-["Bandwidth"];
+    }
+    tbody td:nth-child(8) {
+      @apply before:content-["Price"];
+    }
+    tbody td:nth-child(9) {
+      @apply border-b-0;
+    }
+  }
+
   @media (min-width: 768px) {
     .header {
       background-size: 1500px, 100%;
