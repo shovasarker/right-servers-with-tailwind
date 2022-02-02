@@ -17,6 +17,9 @@
         <!-- custom js for mobile menu -->
         <script src="./dist/js/menu.js" defer></script>
 
+        <!-- custom js for sort selectors -->
+        <script src="./dist/js/sort-selectors.js" defer></script>
+
     </head>
 
     <body class="bg-bodyBg">
@@ -399,45 +402,45 @@
                 <!-- sort selection section end -->
                 <!-- sort selction display section start -->
                 <div class="flex justify-start items-center flex-wrap gap-4">
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
-                        Location - <span id="location-span" class="text-btnBlue font-bold">USA</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="location-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Location - <span id="location-span" class="text-btnBlue font-bold"></span>
+                        <button id="location-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                    <p id="processor-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
                         Processor - <span id="processor-span" class="text-btnBlue font-bold">intel XEON</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="processor-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
+                    <p id="core-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
                         Core - <span id="core-span" class="text-btnBlue font-bold">8 core</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="core-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                    <p id="ram-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
                         RAM - <span id="ram-span" class="text-btnBlue font-bold">64 GB</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="ram-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                    <p id="storage-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
                         Storage - <span id="storage-span" class="text-btnBlue font-bold">2 x 250 GB SSD</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="storage-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                    <p id="bandwidth-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
                         Bandwidth - <span id="bandwidth-span" class="text-btnBlue font-bold">10 TB</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="bandwidth-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                    <p id="price-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
                         Price - <span id="price-span" class="text-btnBlue font-bold">$180/m</span>
-                        <button class="bg-none border-0 text-title/50 ml-2 p-0">
+                        <button id="price-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
