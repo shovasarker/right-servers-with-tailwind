@@ -59,26 +59,26 @@
                     lg:space-y-0 py-6 lg:py-0 transition-all duration-500 z-10">
                     <ul
                         class="flex flex-col lg:flex-row items-center lg:space-x-6 space-y-6 lg:space-y-0 text-white text-tiny font-medium">
-                        <li id="our-solution-link" class="relative cursor-pointer">
+                        <li class="link relative cursor-pointer">
                             <span>
-                                Our Solution <i id="our-solution-arrow"
-                                    class="fas fa-chevron-down ml-1 transition-transform duration-200"></i>
+                                Our Solution <i
+                                    class="fas fa-chevron-down arrow ml-1 transition-transform duration-200"></i>
                             </span>
-                            <ul id="our-solution-dropdown"
-                                class="lg:absolute w-full rounded-sm bg-menuBlue/20 hidden mt-3 transition-all duration-300 z-10">
+                            <ul
+                                class="dropdown lg:absolute w-full rounded-sm bg-menuBlue/20 hidden mt-3 transition-all duration-300 z-10">
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-1</a></li>
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-2</a></li>
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-3</a></li>
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-4</a></li>
                             </ul>
                         </li>
-                        <li id="fully-managed-link" class="link relative cursor-pointer">
+                        <li class="link relative cursor-pointer">
                             <span>
-                                Fully Managed <i id="fully-managed-arrow"
-                                    class="fas fa-chevron-down ml-1 transition-transform duration-200"></i>
+                                Fully Managed <i
+                                    class="fas fa-chevron-down arrow ml-1 transition-transform duration-200"></i>
                             </span>
-                            <ul id="fully-managed-dropdown"
-                                class="lg:absolute w-full rounded-sm bg-menuBlue/20 hidden mt-3 transition-all duration-300 z-10">
+                            <ul
+                                class="dropdown lg:absolute w-full rounded-sm bg-menuBlue/20 hidden mt-3 transition-all duration-300 z-10">
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-1</a></li>
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-2</a></li>
                                 <li class="px-4 py-2 hover:bg-menuBlue/80"><a href="">Link-3</a></li>
@@ -344,7 +344,7 @@
                 <div
                     class="flex justify-center lg:justify-start items-center flex-wrap gap-y-5 bg-white py-2 px-5 mb-5">
                     <select name="location" id="location"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>Location</option>
                         <option value="USA">USA</option>
                         <option value="EU">EU</option>
@@ -352,22 +352,22 @@
                         <option value="SA">SA</option>
                     </select>
                     <select name="processor" id="processor"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>Processor</option>
                         <option value="intel Xeon">intel Xeon</option>
                         <option value="intel">intel</option>
                         <option value="AMD">AMD</option>
                     </select>
                     <select name="core" id="core"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
-                        <option value="" disabled selected>Core</option>
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        <option value="" disabled>Core</option>
                         <option value="16 core">16 core</option>
-                        <option value="8 core">8 core</option>
+                        <option value="8 core" selected>8 core</option>
                         <option value="4 core">4 core</option>
                         <option value="2 core">2 core</option>
                     </select>
                     <select name="ram" id="ram"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>RAM</option>
                         <option value="128 GB">128 GB</option>
                         <option value="64 GB">64 GB</option>
@@ -375,7 +375,7 @@
                         <option value="16 GB">16 GB</option>
                     </select>
                     <select name="storage" id="storage"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>Storage</option>
                         <option value="1 x 1TB SSD">1 x 1TB SSD</option>
                         <option value="1 x 500 GB SSD">1 x 500 GB SSD</option>
@@ -383,7 +383,7 @@
                         <option value="2 x 120 Gb SSD">2 x 120 Gb SSD</option>
                     </select>
                     <select name="bandwidth" id="bandwidth"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>Bandwidth</option>
                         <option value="10 TB">10 TB</option>
                         <option value="5 TB">5 TB</option>
@@ -391,7 +391,7 @@
                         <option value="1 TB">1 TB</option>
                     </select>
                     <select name="price" id="price"
-                        class="inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
+                        class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
                         <option value="" disabled selected>Price</option>
                         <option value="$180/m">$180/m</option>
                         <option value="$180/m">$180/m</option>
@@ -402,45 +402,49 @@
                 <!-- sort selection section end -->
                 <!-- sort selction display section start -->
                 <div class="flex justify-start items-center flex-wrap gap-4">
-                    <p id="location-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        Location - <span id="location-span" class="text-btnBlue font-bold"></span>
-                        <button id="location-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="location-label"
+                        class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Location - <span id="location-span" class="text text-btnBlue font-bold"></span>
+                        <button id="location-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="processor-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        Processor - <span id="processor-span" class="text-btnBlue font-bold">intel XEON</span>
-                        <button id="processor-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="processor-label"
+                        class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Processor - <span id="processor-span" class="text text-btnBlue font-bold"></span>
+                        <button id="processor-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="core-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
-                        Core - <span id="core-span" class="text-btnBlue font-bold">8 core</span>
-                        <button id="core-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="core-label" class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full">
+                        Core - <span id="core-span" class="text text-btnBlue font-bold">8 core</span>
+                        <button id="core-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="ram-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        RAM - <span id="ram-span" class="text-btnBlue font-bold">64 GB</span>
-                        <button id="ram-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="ram-label" class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        RAM - <span id="ram-span" class="text text-btnBlue font-bold"></span>
+                        <button id="ram-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="storage-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        Storage - <span id="storage-span" class="text-btnBlue font-bold">2 x 250 GB SSD</span>
-                        <button id="storage-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="storage-label"
+                        class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Storage - <span id="storage-span" class="text text-btnBlue font-bold"></span>
+                        <button id="storage-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="bandwidth-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        Bandwidth - <span id="bandwidth-span" class="text-btnBlue font-bold">10 TB</span>
-                        <button id="bandwidth-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="bandwidth-label"
+                        class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Bandwidth - <span id="bandwidth-span" class="text text-btnBlue font-bold"></span>
+                        <button id="bandwidth-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <p id="price-label" class="text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
-                        Price - <span id="price-span" class="text-btnBlue font-bold">$180/m</span>
-                        <button id="price-label-close" class="bg-none border-0 text-title/50 ml-2 p-0">
+                    <p id="price-label" class="label text-title/70 text-sm bg-btnBlue/10 px-3 py-1 rounded-full hidden">
+                        Price - <span id="price-span" class="text text-btnBlue font-bold"></span>
+                        <button id="price-label-close" class="close-btn bg-none border-0 text-title/50 ml-2 p-0">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>

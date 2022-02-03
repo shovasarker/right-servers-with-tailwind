@@ -1,4 +1,25 @@
-const locationSelect = document.querySelector('#location')
+const selector = document.querySelectorAll('.selector')
+const label = document.querySelectorAll('.label')
+const text = document.querySelectorAll('.text')
+const closeBtn = document.querySelectorAll('.close-btn')
+
+for (let i = 0; i < selector.length; i++) {
+  selector[i].addEventListener('change', () => {
+    if (label[i].classList.contains('hidden')) {
+      label[i].classList.remove('hidden')
+    }
+    text[i].innerHTML = selector[i].value
+  })
+}
+
+for (let i = 0; i < closeBtn.length; i++) {
+  closeBtn[i].addEventListener('click', () => {
+    label[i].classList.add('hidden')
+    selector[i].selectedIndex = '0'
+  })
+}
+
+/* const locationSelect = document.querySelector('#location')
 const locationLabel = document.querySelector('#location-label')
 const locationSpan = document.querySelector('#location-span')
 const locationCloseBtn = document.querySelector('#location-label-close')
@@ -31,8 +52,9 @@ const bandwidthCloseBtn = document.querySelector('#bandwidth-label-close')
 const priceSelect = document.querySelector('#price')
 const priceLabel = document.querySelector('#price-label')
 const priceSpan = document.querySelector('#price-span')
-const priceCloseBtn = document.querySelector('#price-label-close')
+const priceCloseBtn = document.querySelector('#price-label-close') */
 
+/* 
 // location selector group listeners
 locationSelect.addEventListener('change', () => {
   if (locationLabel.classList.contains('hidden')) {
@@ -116,3 +138,4 @@ priceCloseBtn.addEventListener('click', () => {
   priceLabel.classList.add('hidden')
   priceSelect.selectedIndex = '0'
 })
+ */
