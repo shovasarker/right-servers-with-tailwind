@@ -121,6 +121,52 @@
     @apply before:content-['$'] before:text-white before:absolute before:left-0 before:top-2.5 before:text-lg before:font-bold;
   }
 
+  /* --------------------------
+  ? FAQ Section styles
+  ------------------------------*/
+
+  .faq-list-item {
+    @apply relative pl-3.5 mb-3 cursor-pointer before:content-[""] before:absolute before:w-0 before:h-0 before:left-0 before:top-50p before:-translate-y-50p before:border-transparent before:!border-l-title before:border-t-[5px] before:border-r-0 before:border-b-[5px] before:border-l-[5px];
+  }
+
+  .faq-list-item:last-child {
+    @apply mb-0;
+  }
+
+  .faq-list-item.selected {
+    @apply !text-btnBlue underline underline-offset-2 before:!border-l-btnBlue;
+  }
+
+  .accordion.open {
+    @apply pb-5;
+  }
+
+  .accordion.open .accordion-body {
+    @apply !h-fit mt-4  transition-all duration-500;
+  }
+
+  .accordion-btn {
+    @apply relative w-full pr-4 text-left before:content-[""] before:absolute before:top-50p before:-translate-y-50p before:right-0 before:w-3 before:h-[2px] before:bg-title before:rotate-90 before:transition-all after:content-[""] after:absolute after:top-50p after:-translate-y-50p after:right-0 after:w-3 after:h-[2px] after:bg-title;
+  }
+
+  .accordion.open .accordion-btn {
+    @apply text-btnBlue before:!rotate-0 before:bg-btnBlue before:transition-all after:bg-btnBlue transition-all;
+  }
+
+  @keyframes openAni {
+    0% {
+      height: 0%;
+      opacity: 0;
+      margin-top: 0px;
+    }
+
+    100% {
+      height: 100%;
+      opacity: 1;
+      margin-top: 20px;
+    }
+  }
+
   /* *************************************
    !Media Queries for Responsive Designs 
    * ****************************************/

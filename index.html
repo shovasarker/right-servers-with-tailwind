@@ -20,6 +20,9 @@
         <!-- custom js for sort selectors -->
         <script src="./dist/js/sort-selectors.js" defer></script>
 
+        <!-- custom accordion js -->
+        <script src="./dist/js/accordion.js" defer></script>
+
     </head>
 
     <body class="bg-bodyBg">
@@ -229,7 +232,7 @@
             <section class="container px-8 lg:px-16 xl:px-32 mb-4">
                 <div class="flex flex-col-reverse md:flex-row items-center lg:justify-between gap-8">
                     <div class="md:w-1/2 xl:w-2/5">
-                        <div class="text-4xl font-bold text-title mb-6">The Bare Metal Server</div>
+                        <div class="text-2xl md:text-4xl font-bold text-title mb-6">The Bare Metal Server</div>
                         <p class="text-base font-normal text-title mb-8">
                             Our high-performance Bare Metal server offer you high reliability and stability. Create
                             servers of ultra-powerful machines for a few days, hours, minutes.
@@ -249,7 +252,7 @@
             <!-- features section start -->
             <section class="feature-section bg-gradient-to-r from-gStart to-gEnd py-40 mb-10">
                 <div class="container px-8 lg:px-16 xl:px-32 text-center">
-                    <h1 class="text-4xl font-bold text-white mb-5">Key Product Features</h1>
+                    <h1 class="text-2xl md:text-4xl font-bold text-white mb-5">Key Product Features</h1>
                     <p class="text-base text-white font-normal leading-loose mb-16">
                         Our High Performance Bare Metal server offer you high<br>reliability and stability
                     </p>
@@ -336,7 +339,7 @@
 
             <!-- configuration section start -->
             <section class="container px-8 lg:px-16 xl:px-32 mb-20">
-                <h1 class="text-4xl font-bold text-title mb-5 text-center">Configuration For You</h1>
+                <h1 class="text-2xl md:text-4xl font-bold text-title mb-5 text-center">Configuration For You</h1>
                 <p class="text-base text-title font-normal leading-loose text-center mb-16">
                     Our High Performance Bare Metal server offer you high<br>reliability and stability
                 </p>
@@ -345,7 +348,7 @@
                     class="flex justify-center lg:justify-start items-center flex-wrap gap-y-5 bg-white py-2 px-5 mb-5">
                     <select name="location" id="location"
                         class="selector inline-block bg-white pl-3 py-1 focus:outline-none text-title/70">
-                        <option value="" disabled selected>Location</option>
+                        <option value="" disabled>Location</option>
                         <option value="USA">USA</option>
                         <option value="EU">EU</option>
                         <option value="SEA">SEA</option>
@@ -550,7 +553,7 @@
             <!-- Test server section start -->
             <section class="server-testing-section bg-gradient-to-r from-gStart to-gEnd py-40 mb-10">
                 <div class="container px-8 lg:px-16 xl:px-32 text-center">
-                    <h1 class="text-4xl font-bold text-white mb-5">Server All Around The World</h1>
+                    <h1 class="text-2xl md:text-4xl font-bold text-white mb-5">Server All Around The World</h1>
                     <p class="text-base text-white font-normal leading-loose mb-16">
                         Our High Performance Bare Metal server offer you high reliability and stability
                         <br>create servers of ultra-powerful machines
@@ -711,7 +714,7 @@
 
             <!-- Distribution Section start -->
             <section class="container px-8 lg:px-16 xl:px-32 mb-20">
-                <h1 class="text-4xl font-bold text-title mb-5 text-center">Available Distribution</h1>
+                <h1 class="text-2xl md:text-4xl font-bold text-title mb-5 text-center">Available Distribution</h1>
                 <p class="text-base text-title font-normal leading-loose text-center mb-16">
                     Our High Performance Bare Metal server offer you high<br>reliability and stability
                 </p>
@@ -723,7 +726,7 @@
                         </div>
                     </aside>
                     <div
-                        class="w-full grid grid-cols-2 md:grid-cols-4 gap-x-10 lg:gap-x-12 2xl:gap-x-20 gap-y-6 bg-white py-10 px-14 text-sm text-title">
+                        class="w-full grid grid-cols-2 md:grid-cols-4 gap-x-10 lg:gap-x-12 2xl:gap-x-20 gap-y-6 bg-white py-10 px-14 text-sm text-title shadow-lg">
 
                         <!-- row - 1 -->
                         <div class="space-y-4 text-center">
@@ -811,7 +814,7 @@
             <!-- Middle Banner Section start -->
             <section class="container px-8 lg:px-20 xl:px-40 mb-20  ">
                 <div
-                    class="h-max bg-gradient-to-r from-gStart to-gEnd py-6 px-4 md:px-6 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+                    class="h-max bg-gradient-to-r from-gStart to-gEnd py-12 md:py-6 px-4 md:px-6 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-4">
                     <div>
                         <img class="w-full flex-shrink-0" src="./images/middle-banner.png" alt="">
                     </div>
@@ -840,6 +843,107 @@
                 </div>
             </section>
             <!-- Middle Banner Section end -->
+
+            <!-- FAQ Section Start -->
+            <section class="container px-8 lg:px-16 xl:px-32 mb-20">
+                <h1 class="text-2xl md:text-4xl font-bold text-title mb-12 text-center">Frequently Asked Questions</h1>
+                <div class="flex flex-col lg:flex-row items-start gap-6">
+                    <aside class="bg-white p-9 rounded-sm shadow-lg hidden lg:block">
+                        <h3 class="text-xl font-bold text-title">Select Topic</h3>
+                        <ul class="text-base text-title font-bold mt-8">
+                            <li class="faq-list-item">Right Servers</li>
+                            <li class="faq-list-item selected ">About Bare Metal</li>
+                            <li class="faq-list-item ">Pricing & Support</li>
+                            <li class="faq-list-item ">Purchasing Online</li>
+                            <li class="faq-list-item ">Returns</li>
+                        </ul>
+                    </aside>
+
+                    <!-- slector for mobile -->
+                    <select name="faq-select" id="faq-select"
+                        class="lg:hidden px-4 py-2 text-btnBlue bg-white rounded-sm shadow-md font-bold text-base">
+                        <option value="" disabled>Select Topic</option>
+                        <option class="text-title/80" value="right servers">Right Servers</option>
+                        <option class="text-title/80" value="about bare metal" selected>About Bare Metal</option>
+                        <option class="text-title/80" value="pricing and support">Pricing & Support</option>
+                        <option class="text-title/80" value="purchasing online">Purchasing Online</option>
+                        <option class="text-title/80" value="returns">Returns</option>
+                    </select>
+
+                    <!-- Accordion start -->
+                    <div class="flex-1 space-y-2">
+                        <!-- Accordion item 1 -->
+                        <div class="accordion text-title bg-white rounded-sm shadow-lg borde px-5">
+                            <button data-accordion-btn
+                                class=" accordion-btn py-5 font-bold text-lg rounded-sm cursor-pointer">
+                                What is the difference between dedicated and Bare Metal servers?</button>
+                            <div data-accordion-body class="accordion-body font-normal text-base h-0 overflow-hidden">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                dolor excepturi.
+                                Id
+                                dolorem repudiandae excepturi velit expedita natus minima ipsam.
+                            </div>
+                        </div>
+                        <!-- Accordion item 2 -->
+                        <div class="accordion text-title bg-white rounded-sm shadow-lg borde px-5">
+                            <button data-accordion-btn
+                                class=" accordion-btn py-5 font-bold text-lg rounded-sm cursor-pointer">
+                                How to add failover IP addresses on Bare Metal server?
+                            </button>
+                            <div data-accordion-body class="accordion-body font-normal text-base h-0 overflow-hidden">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                dolor excepturi.
+                                Id
+                                dolorem repudiandae excepturi velit expedita natus minima ipsam.
+                            </div>
+                        </div>
+                        <!-- Accordion item 3 -->
+                        <div class="accordion text-title bg-white rounded-sm shadow-lg borde px-5">
+                            <button data-accordion-btn
+                                class=" accordion-btn py-5 font-bold text-lg rounded-sm cursor-pointer">
+                                How many network ports are available on the Bare Metal server?
+                            </button>
+                            <div data-accordion-body class="accordion-body font-normal text-base h-0 overflow-hidden">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                dolor excepturi.
+                                Id
+                                dolorem repudiandae excepturi velit expedita natus minima ipsam.
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 4 -->
+                        <div class="accordion text-title bg-white rounded-sm shadow-lg borde px-5">
+                            <button data-accordion-btn
+                                class=" accordion-btn py-5 font-bold text-lg rounded-sm cursor-pointer">
+                                How Can I install a Cloud Bare Metal server?
+                            </button>
+                            <div data-accordion-body class="accordion-body font-normal text-base h-0 overflow-hidden">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                dolor excepturi.
+                                Id
+                                dolorem repudiandae excepturi velit expedita natus minima ipsam.
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 5 -->
+                        <div class="accordion text-title bg-white rounded-sm shadow-lg borde px-5">
+                            <button data-accordion-btn
+                                class=" accordion-btn py-5 font-bold text-lg rounded-sm cursor-pointer">
+                                How do I repair an item?
+                            </button>
+                            <div data-accordion-body class="accordion-body font-normal text-base h-0 overflow-hidden">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                dolor excepturi.
+                                Id
+                                dolorem repudiandae excepturi velit expedita natus minima ipsam.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion end -->
+                </div>
+
+            </section>
+            <!-- FAQ Section End -->
 
 
         </main>
