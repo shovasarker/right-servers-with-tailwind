@@ -74,6 +74,18 @@
     @apply border-b-0;
   }
 
+  .server-testing-section {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+  }
+
+  .item {
+    @apply border-b border-b-btnBlue/50;
+  }
+
+  .item:last-child {
+    @apply border-b-0;
+  }
+
   @media (max-width: 360px) {
     .header {
       background-position: -410px 290px, center;
@@ -145,6 +157,14 @@
     }
     .feature-section {
       clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+    }
+
+    .server-testing-section {
+      clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .item:nth-last-child(-n + 2) {
+      @apply border-b-0;
     }
   }
 
