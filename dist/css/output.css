@@ -504,6 +504,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* --------------------------
+   ? Header section styles 
+  ------------------------------*/
+
 .header {
   background: url('../../images/banner-bg.png') no-repeat,
       linear-gradient(to right, #02047e, #002abf);
@@ -583,6 +587,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(68 215 149 / var(--tw-text-opacity));
 }
 
+/* --------------------------
+  ? Offer section styles 
+------------------------------*/
+
 .prev-price::after {
   position: absolute;
   top: 50%;
@@ -615,10 +623,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 68px;
 }
 
+/* --------------------------
+   ? Feature section styles 
+  ------------------------------*/
+
 .feature-section {
   -webkit-clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
           clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0);
 }
+
+/* --------------------------
+   ? Configuration section styles 
+  ------------------------------*/
 
 thead tr {
   background-color: rgb(42 92 240 / 0.1);
@@ -658,6 +674,10 @@ tbody tr:last-child {
   border-bottom-width: 0px;
 }
 
+/* --------------------------
+  ? Server Testing section styles 
+  ------------------------------*/
+
 .server-testing-section {
   -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
           clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
@@ -671,6 +691,22 @@ tbody tr:last-child {
 .item:last-child {
   border-bottom-width: 0px;
 }
+
+/* --------------------------
+  ? Distribution section styles 
+  ------------------------------*/
+
+.active {
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(42 92 240 / var(--tw-border-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(42 92 240 / var(--tw-text-opacity)) !important;
+}
+
+/* *************************************
+   !Media Queries for Responsive Designs 
+   * ****************************************/
 
 @media (max-width: 360px) {
   .header {
@@ -985,6 +1021,10 @@ tbody tr:last-child {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1032,6 +1072,10 @@ tbody tr:last-child {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1042,6 +1086,10 @@ tbody tr:last-child {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1078,6 +1126,15 @@ tbody tr:last-child {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1260,6 +1317,16 @@ tbody tr:last-child {
   padding-bottom: 0.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .pb-64 {
   padding-bottom: 16rem;
 }
@@ -1405,6 +1472,12 @@ tbody tr:last-child {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1459,10 +1532,6 @@ tbody tr:last-child {
   color: rgb(42 92 240 / 0.8);
 }
 
-.hover\:text-btnBlue\/70:hover {
-  color: rgb(42 92 240 / 0.7);
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1484,8 +1553,16 @@ tbody tr:last-child {
     width: 50%;
   }
 
+  .md\:flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1512,6 +1589,11 @@ tbody tr:last-child {
   .md\:gap-x-5 {
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:text-center {
@@ -1581,6 +1663,11 @@ tbody tr:last-child {
     gap: 6rem;
   }
 
+  .lg\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
   .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -1617,6 +1704,16 @@ tbody tr:last-child {
     padding-bottom: 0px;
   }
 
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .lg\:pb-96 {
     padding-bottom: 24rem;
   }
@@ -1649,6 +1746,11 @@ tbody tr:last-child {
     padding-right: 8rem;
   }
 
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1656,5 +1758,12 @@ tbody tr:last-child {
 
   .xl\:leading-tight {
     line-height: 1.25;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
   }
 }
