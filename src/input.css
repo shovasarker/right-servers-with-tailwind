@@ -109,6 +109,18 @@
     @apply !text-btnBlue border-l-4 border-l-btnBlue;
   }
 
+  /* --------------------------
+  ? Middle section styles 
+  ------------------------------*/
+
+  .prev-price-middle {
+    @apply after:content-[""] after:bg-white/50 after:w-[32px] after:h-px after:absolute after:top-50p after:left-0;
+  }
+
+  .curr-price-middle {
+    @apply before:content-['$'] before:text-white before:absolute before:left-0 before:top-2.5 before:text-lg before:font-bold;
+  }
+
   /* *************************************
    !Media Queries for Responsive Designs 
    * ****************************************/
@@ -193,6 +205,10 @@
     .item:nth-last-child(-n + 2) {
       @apply border-b-0;
     }
+
+    .curr-price-middle {
+      @apply before:top-0;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -200,6 +216,9 @@
       background-size: 1400px, 100%;
       background-position: -220px -100px, center;
       clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    }
+    .curr-price-middle {
+      @apply before:top-2.5;
     }
   }
   @media (min-width: 1280px) {
