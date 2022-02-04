@@ -146,25 +146,11 @@
   }
 
   .accordion-btn {
-    @apply relative w-full pr-4 text-left before:content-[""] before:absolute before:top-50p before:-translate-y-50p before:right-0 before:w-3 before:h-[2px] before:bg-title before:rotate-90 before:transition-all after:content-[""] after:absolute after:top-50p after:-translate-y-50p after:right-0 after:w-3 after:h-[2px] after:bg-title;
+    @apply relative w-full pr-4 text-left before:content-[""] before:absolute before:top-50p before:-translate-y-50p before:right-0 before:w-3 before:h-[2px] before:bg-title before:rotate-90 before:transition-all before:duration-300 after:content-[""] after:absolute after:top-50p after:-translate-y-50p after:right-0 after:w-3 after:h-[2px] after:bg-title;
   }
 
   .accordion.open .accordion-btn {
-    @apply text-btnBlue before:!rotate-0 before:bg-btnBlue before:transition-all after:bg-btnBlue transition-all;
-  }
-
-  @keyframes openAni {
-    0% {
-      height: 0%;
-      opacity: 0;
-      margin-top: 0px;
-    }
-
-    100% {
-      height: 100%;
-      opacity: 1;
-      margin-top: 20px;
-    }
+    @apply text-btnBlue before:!rotate-0 before:bg-btnBlue before:transition-all before:duration-300 after:bg-btnBlue transition-all;
   }
 
   /* *************************************
