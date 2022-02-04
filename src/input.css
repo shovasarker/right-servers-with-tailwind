@@ -38,7 +38,7 @@
   ? Offer section styles 
 ------------------------------*/
   .prev-price {
-    @apply after:content-[""] after:bg-title/75 after:w-[32px] after:h-px after:absolute after:top-50p after:left-0;
+    @apply after:content-[""] after:bg-title/75 after:w-[32px] after:h-px after:absolute after:top-50p after:-translate-y-50p after:left-0;
   }
 
   .curr-price {
@@ -114,7 +114,7 @@
   ------------------------------*/
 
   .prev-price-middle {
-    @apply after:content-[""] after:bg-white/75 after:w-[32px] after:h-[2px] after:absolute after:top-50p after:left-0;
+    @apply after:content-[""] after:bg-white/75 after:w-[32px] after:h-[2px] after:absolute after:top-50p after:-translate-y-50p after:left-0;
   }
 
   .curr-price-middle {
