@@ -1,16 +1,14 @@
-const accordionBtn = document.querySelectorAll('.accordion-btn')
-const accordion = document.querySelectorAll('.accordion')
+const accordionBtns = document.querySelectorAll('.accordion-btn')
+const accordions = document.querySelectorAll('.accordion')
 
-for (let i = 0; i < accordionBtn.length; i++) {
-  accordionBtn[i].addEventListener('click', () => {
-    for (j = 0; j < accordion.length; j++) {
+accordionBtns.forEach((accordionBtn, i) => {
+  accordionBtn.addEventListener('click', () => {
+    accordions.forEach((accordion, j) => {
       if (i == j) {
-        accordion[i].classList.toggle('open')
-        continue
+        accordion.classList.toggle('open')
+      } else if (accordion.classList.contains('open')) {
+        accordion.classList.remove('open')
       }
-      if (accordion[j].classList.contains('open')) {
-        accordion[j].classList.remove('open')
-      }
-    }
+    })
   })
-}
+})
